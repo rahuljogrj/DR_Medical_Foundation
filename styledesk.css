@@ -1,0 +1,528 @@
+* {
+    margin: 0px;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::selection {
+    color: rgb(0, 0, 0);
+    background: rgb(147, 130, 226);
+}
+
+h1 {
+    font-size: 25px;
+    text-align: center;
+    margin: 10px 0%;
+    font-weight: bold;
+}
+
+
+/* dropdown */
+
+.logo-1 {
+    height: 100px;
+    width: auto;
+    margin: 0px 300px;
+    /* left: 0px; */
+}
+
+.btn-group {
+    position: fixed;
+    width: auto;
+    height: auto;
+    margin-top: 30px;
+    left: 30px;
+    outline: none;
+    border: none;
+}
+
+.btn-dropdown .fa-bars {
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(57, 57, 243);
+    transition: 0.5s;
+}
+
+.btn-dropdown .fa-bars:hover {
+    transform: scale(1.2)
+}
+
+li .dropdown-item {
+    font-size: 15px;
+}
+
+
+/* Logo css */
+
+.logo {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+    width: 100%;
+    height: 110px;
+    /* display: inline-block; */
+    /* display: flex;
+    justify-content: space-between; */
+    box-shadow: 0px 1px 3px 1px black;
+    padding: 0px 80px;
+}
+
+
+/* 
+.logo-1 {
+    height: 100px;
+    width: auto;
+    padding: 5px 0px;
+} */
+
+
+/* .logo-2 {
+    height: 80px;
+    width: auto;
+    margin-top: 20px
+} */
+
+
+/* fixbackground */
+
+.fixbackground {
+    position: fixed;
+    width: 100%;
+    height: 700px;
+    background: url(/images/bg-logo-1.png) no-repeat;
+    background-size: 600px auto;
+    opacity: 0.9;
+    z-index: -1;
+    left: 30%;
+}
+
+
+/* .carousel-item */
+
+.carousel-item .slideimg {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+
+/* aboutus mission vision moto */
+
+.aboutus {
+    color: black;
+    width: 50%;
+    height: auto;
+    margin: auto;
+    padding: 0px 10px 10px 20px;
+    border-left: 1px solid black;
+}
+
+.missionvission {
+    color: black;
+    width: 50%;
+    height: auto;
+    margin: auto;
+    padding: 0px 10px 10px 10px;
+    background: transparent;
+}
+
+.aboutmissionvission {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px 20px 20px;
+    margin: auto;
+}
+
+.aboutus p {
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+
+.aboutus h1 {
+    font-size: 25px;
+    color: black;
+}
+
+.missionvission p {
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.missionvission h1 {
+    font-size: 25px;
+    color: black
+}
+
+
+/* services */
+
+.allservices {
+    background: rgb(245, 244, 244);
+    /* background: linear-gradient(to bottom right, #708fad, rgb(255, 255, 255)); */
+    padding: 20px 100px;
+}
+
+.allservices h1 {
+    margin: 0px 5%;
+    padding: 10px 0px;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin: auto;
+}
+
+.service {
+    margin: auto;
+    padding: 20px 0px;
+}
+
+.servicesimg {
+    width: 250px;
+    height: 230px;
+    border-radius: 20px;
+    margin-left: 0px;
+}
+
+.service h4 {
+    text-align: center;
+    background-color: transparent;
+    font-size: 20px;
+}
+
+
+/* services flip card */
+
+.flip-card {
+    background-color: transparent;
+    width: 250px;
+    height: 230px;
+    transition: 1s;
+    /* perspective: 1000px; */
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 20px;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    color: black;
+}
+
+.flip-card-back {
+    padding-top: 15px;
+    background-color: aqua;
+    background-image: url(images/bg-logo.jpeg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: rgb(0, 0, 0);
+    transform: rotateY(180deg);
+}
+
+.flip-card-back h2 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.flip-card-back p {
+    font-size: 15px;
+    text-align: justify;
+    padding: 3px;
+}
+
+
+/* why choose our foundation section */
+
+
+/* 
+.whychooseus {
+    width: 100%;
+    background-color: rgb(48, 48, 189);
+    color: white;
+    height: 80px;
+    text-align: center;
+}
+.whychooseus ol {
+    display: flex;
+    margin: 25px 0px;
+}
+.whychooseus ol h2 {
+    padding-right: 100px;
+}
+.whychooseus ol h2 li {
+    font-size: 22px;
+} */
+
+.whychooseus {
+    margin: 20px;
+    /* background-image: url(/images/bg-logo-1.png); */
+    width: auto;
+    height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+.choosediv {
+    display: flex;
+    width: 550px;
+    margin: 10px auto;
+    padding: 10px 30px;
+    box-shadow: 3px 3px 0px 0px #17024b;
+    border-radius: 20px;
+}
+
+.whychoose {
+    font-size: 18px;
+    font-weight: 900;
+    margin-left: 10px;
+}
+
+
+/* images gallery */
+
+.imagegallery {
+    background-image: linear-gradient(to bottom right, rgb(255, 255, 255), #708fad);
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: auto;
+    /* grid-template-columns: 25% 25% 25% 25%; */
+}
+
+.galleryimg {
+    margin: 10px auto;
+    width: 310px;
+    height: 310px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(105, 96, 96);
+}
+
+.galleryimg img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 3px 3px 5px 1px black;
+    cursor: pointer;
+}
+
+.galleryimg img:hover {
+    transition: 1s;
+    transform: scale(1.2);
+}
+
+.imagegallery h1 {
+    margin: 0px 5%;
+    padding: 10px 0px;
+}
+
+
+/* brochure */
+
+.brochure {
+    font-size: 18px;
+    font-weight: 900;
+    margin-left: 50px
+}
+
+
+/* form section */
+
+form {
+    display: none;
+    margin: 10px 50px;
+}
+
+.form {
+    width: 600px;
+    height: auto;
+    background-image: linear-gradient(to bottom right, rgb(255, 255, 255), #708fad);
+    /* background-color: white; */
+    /* background-image: url(images/bg-logo-1.png); */
+    margin: auto;
+    margin-top: 20px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 0px 1px 20px 0px #000000;
+}
+
+.form label {
+    width: 130px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+input {
+    width: 250px;
+    height: 30px;
+    font-size: 15px;
+    margin: 0px 10px 10px 10px;
+    padding-left: 10px;
+    right: 0;
+}
+
+.select {
+    width: 250px;
+    height: 30px;
+    font-size: 15px;
+    margin: 0px 65px 10px 10px;
+    padding-left: 10px;
+    right: 0;
+}
+
+.flexform {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    font-size: 20px;
+    font-weight: 900;
+    padding: 10px 40px;
+    margin: 20px 180px;
+    background-color: rgb(53, 33, 233);
+    color: white;
+    border-radius: 10px;
+}
+
+.button:hover {
+    background-color: yellowgreen;
+    color: black;
+}
+
+.formessage {
+    font-size: 16px;
+    font-weight: 900;
+    margin: 20px 0px 15px 0px;
+    text-align: center;
+    color: rgb(58, 53, 53);
+}
+
+.fa {
+    font-size: 25px;
+    font-weight: 600;
+    color: #003be0;
+    margin: 0px 15px 0px 0px;
+}
+
+.form .orwhatsapp {
+    width: 300px;
+    height: 120px;
+    margin: auto;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form .orwhatsapp img {
+    width: 120px;
+    height: 120px;
+}
+
+
+/* collaboration section */
+
+.collaboration {
+    background-color: transparent;
+    padding-bottom: 30px;
+}
+
+.partners {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 70px;
+}
+
+.partner {
+    margin: 10px auto;
+    width: 150px;
+    height: 150px;
+    margin: 0px 20px;
+}
+
+.partner img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 3px 3px 5px 1px black;
+    transition: 0.5s;
+}
+
+.partner img:hover {
+    transform: scale(1.2);
+}
+
+.collaboration h1 {
+    margin: 0px 5%;
+    padding: 10px 0px;
+}
+
+
+/* copyrightght */
+
+.copyright {
+    width: 100%;
+    height: 100px;
+    background: rgb(7, 42, 56);
+    color: white;
+    bottom: 0;
+}
+
+.copyright p {
+    font-size: 18px;
+    padding: 40px 0px 0px 400px;
+    color: white;
+}
